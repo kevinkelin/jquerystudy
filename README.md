@@ -46,8 +46,7 @@ markdown的使用说明(http://www.jianshu.com/p/q81RER) (http://wowubuntu.com/m
   5. :contains(text)过滤选择器 这里的text是网页中的文本($("li:contains('hello world')"))
   6. :hidden过滤选择器 可以选择到display:none 和type='hidden'的元素
   7. [attribute\*=value]属性选择器 指包含value的元素如$("li[title\*='果']")所有title中包含有'果'字的li元素
-  8. :input表单选择器 不仅可以选择Input表单，还可以选择<textarea>、<select> 和 <button>标记的表单元素,:input前面有一个空格
-  9. :submit提交按钮选择器 $("#frmTest input:submit") 这里input必不可少，少了以后会把普通的button也选择上
+  
  
 ## 四、操作样式
 1. 通过addClass()和css() 使用css可一次性的赋予多个值 $("#content").css({"color":'white',"background":'blue'})，单个值使用$("#content").css("color"，'white')
