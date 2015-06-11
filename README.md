@@ -38,7 +38,7 @@ markdown的使用说明(http://www.jianshu.com/p/q81RER) (http://wowubuntu.com/m
             $("div label").css("background-color","blue");//这个既会把div下的label(2)选择也会把div下的p下的label(1)选择
         </script>
 
-## 选择器
+## 三、选择器
   1. :eq(index)过滤选择器 可以使用负数表示倒数某个元素，如$("li:eq(-1)")表示倒数第一个li元素
   2. prev + next选择器 选择的是prev下的相邻元素next的第一个元素(下级)
   3. prev ~ siblings选择器 选择的是和prev为兄弟元素的所有元素(下级)
@@ -46,7 +46,15 @@ markdown的使用说明(http://www.jianshu.com/p/q81RER) (http://wowubuntu.com/m
   5. :contains(text)过滤选择器 这里的text是网页中的文本($("li:contains('hello world')"))
   6. :hidden过滤选择器 可以选择到display:none 和type='hidden'的元素
   7. [attribute\*=value]属性选择器 指包含value的元素如$("li[title\*='果']")所有title中包含有'果'字的li元素
+  8. :input表单选择器 不仅可以选择Input表单，还可以选择<textarea>、<select> 和 <button>标记的表单元素,:input前面有一个空格
+  9. :submit提交按钮选择器 $("#frmTest input:submit") 这里input必不可少，少了以后会把普通的button也选择上
  
+## 四、操作样式
+1. 通过addClass()和css() 使用css可一次性的赋予多个值 $("#content").css({"color":'white',"background":'blue'})，单个值使用$("#content").css("color"，'white')
+2. 使用appendTo()方法向被选元素内插入内容 $(content).appendTo(selector),$($html).appendTo(".green")
+3. 使用before()和after()在元素前后插入内容 $(selector).before(content)和$(selector).after(content)
+4. 替换内容 replaceWith()和replaceAll() $(selector).replaceWith(content)和$(content).replaceAll(selector)
+5. 使用remove()和empty()方法删除元素 remove()方法删除所选元素本身和子元素,通过添加过滤参数指定需要删除的某些元素 如$("span").remove(".red") 表示删除class为red的span元素,empty则**无此参数**
  
  
  
