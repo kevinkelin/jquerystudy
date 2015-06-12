@@ -56,6 +56,9 @@ markdown的使用说明(http://www.jianshu.com/p/q81RER) (http://wowubuntu.com/m
 5. 使用remove()和empty()方法删除元素 remove()方法删除所选元素本身和子元素,通过添加过滤参数指定需要删除的某些元素 如$("span").remove(".red") 表示删除class为red的span元素,empty则**无此参数**
  
  
- 
- 
- 
+ ## 常用方法
+1. 使用hover()方法切换事件 $(selector).hover(over，out); 当鼠标移到元素上时执行over方法，移出时执行out方法
+2. $("p").click(); 元素的click方法 $("p").click(){} 使用bind函数$("p").bind(click,function(){})感觉不如直接写click简单
+3. unbind()函数在没有参数的时候是会移所有bind的方法
+4. 绑定某个元素的多个事件可以用空格隔开 $("#test").bind("change click",function(){});
+5. .hide() .show() 方法里可以加一个时间延迟参数，能够达到一种缓慢淡入淡出效果
