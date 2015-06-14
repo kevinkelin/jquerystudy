@@ -62,3 +62,6 @@ markdown的使用说明(http://www.jianshu.com/p/q81RER) (http://wowubuntu.com/m
 3. unbind()函数在没有参数的时候是会移所有bind的方法
 4. 绑定某个元素的多个事件可以用空格隔开 $("#test").bind("change click",function(){});
 5. .hide() .show() 方法里可以加一个时间延迟参数，能够达到一种缓慢淡入淡出效果
+
+## AJAX
+1. load() load(url,[data],[callback]) callback为加载结束后执行的函数
